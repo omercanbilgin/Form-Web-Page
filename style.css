@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(foto.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container .sidebar {
+  position: fixed;
+  width: 220px;
+  height: 100%;
+  background: #d39d3f;
+  padding: 20px;
+}
+
+.container .sidebar h2 {
+  color: #97430a;
+  margin-bottom: 45px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 29px;
+}
+
+.container .sidebar h2:hover {
+  color: #ffd997;
+}
+
+.container .sidebar span:hover {
+  color: #97430a;
+}
+
+.container .sidebar span {
+  color: #ffd997;
+  transition: 0.5s;
+}
+
+.container .sidebar ul li {
+  padding: 30px;
+  border-bottom: 1px solid #ffd997;
+  transition: 0.5s;
+}
+
+.container .sidebar ul li:hover {
+  background: #f8c56a;
+}
+
+.container .sidebar ul li a {
+  color: whitesmoke;
+}
+
+.container .sidebar .social {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.container .sidebar .social a:hover {
+  background: #f8c56a;
+}
+
+.container .sidebar .social a {
+  display: block;
+  color: whitesmoke;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 5px;
+  background: #97430a;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
+.sign-up {
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  background: #d39d3f;
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.sign-up h1 {
+  font-size: 40px;
+  color: whitesmoke;
+}
+
+.sign-up a {
+  color: #97430a;
+  text-decoration: underline;
+  transition: 0.8s;
+}
+
+.sign-up a:hover {
+  color: whitesmoke;
+}
+
+.sign-up input {
+  display: block;
+  width: 100%;
+  padding: 0 16px;
+  height: 44px;
+  text-align: center;
+  box-sizing: border-box;
+  border: none;
+  padding: 10px;
+}
+
+.txt {
+  margin: 20px 0;
+  border-radius: 6px;
+}
+
+.btn {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  background: #97430a;
+  color: whitesmoke;
+  border-radius: 44px;
+  cursor: pointer;
+  display: block;
+  transition: 0.8s;
+}
+
+.btn:hover {
+  transform: scale(0.96);
+  background: whitesmoke;
+  color: #97430a;
+}
+
+.sign-up label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  color: whitesmoke;
+}
+
+.sign-up label input[type="checkbox"] {
+  appearance: none;
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+  border: 1px solid #97430a;
+  position: relative;
+}
+
+input[type="checkbox"]:hover {
+  border-color: white;
+}
+
+input[type="checkbox"]::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(done.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+  opacity: 0;
+  transition: 0.5s all;
+}
+
+input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
